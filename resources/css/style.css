@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ffffff;
+    color: #333232;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+img {
+
+}
+
+section {
+    max-width: 960px;
+    background-position: center;
+    background-size: cover;  /* Use this to see the whole image */
+}
+
+.text-box {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
