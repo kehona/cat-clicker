@@ -13,8 +13,11 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.image {
+    float: left;
+}
 img {
-
+    width: 480px;
 }
 
 section {
