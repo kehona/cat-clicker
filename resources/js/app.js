@@ -6,9 +6,10 @@
  */
 (function() {
     let counter = 0;
-    const image = document.querySelector('img');
+    const imagesDiv = document.querySelector('section');
+    console.log(imagesDiv)
     let pointSpan = document.querySelector('#points');
-    image.addEventListener('click', () => {
+    imagesDiv.addEventListener('click', () => {
         counter++;
         pointSpan.innerHTML = counter;
     });
