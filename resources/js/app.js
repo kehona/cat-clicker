@@ -18,30 +18,17 @@
     const images = document.getElementsByClassName('image');
     for (let i = 0; i < images.length; i++) {
         let count = 0;
+        console.log(i);
+        console.log(images[i])
         images[i].addEventListener('click', (function(clickCount) {
             let imageCount = clickCount;
-            let totalCount = 0;
-            // update total points
-            let pointSpan = document.querySelector('#points');
-            // update points for image 1
-            console.log('hello')
-            if (i === 0) {
-                return function() {
-                    imageCount += 1;
-                    let cat1Clicks = document.querySelector('#points-cat1');
-                    // update image count
-                    cat1Clicks.innerHTML = imageCount;
-                    return imageCount;
-                }
-                // update points for image 2
-            } else if (i === 1) {
-                return function() {
-                    imageCount += 1
-                    let cat2Clicks = document.querySelector('#points-cat2');
-                    cat2Clicks.innerHTML = imageCount;
-                    return imageCount;
-                }
-            } 
+            return function() {
+                imageCount += 1;
+                let catClicks = document.querySelector(`#points-cat${i + 1}`);
+                // update image count
+                catClicks.innerHTML = imageCount;
+                return imageCount;
+            }
         })(count));
     }
 }());
