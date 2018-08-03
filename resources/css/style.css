@@ -13,17 +13,16 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-.image {
-    float: left;
-}
-img {
-    width: 480px;
-}
 
-section {
-    max-width: 960px;
-    background-position: center;
-    background-size: cover;  /* Use this to see the whole image */
+li {
+    border: 1px solid black;
+    text-align: left;
+    padding: 5px;
+}
+li:hover {
+    cursor: pointer;
+    background-color: #523304;
+    color: white;
 }
 
 .text-box {
@@ -39,3 +38,32 @@ section {
     margin: 0 auto;
     text-align: center;
 }
+
+#cat-list {
+    float: left;
+    list-style: none;
+    width: 25%;
+}
+
+#cat {
+    float: left;
+    position: relative;
+    width: 75%;
+}
+
+img {
+  max-width: 100%;
+}
+
+#info {
+    position: absolute;
+    background-color: #ffffff4d;
+    border-radius: 5px;
+    width: 100%;
+    color: black;
+    height: 20%;
+    font-weight: 600px;
+    float: left;
+}
+
+

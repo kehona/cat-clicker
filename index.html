@@ -6,43 +6,24 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,600,400i" rel="stylesheet">
     <title>Cat Clicker</title>
 </head>
 <body>
     <div class="row">
         <header>
             
-            <h1>Total clicks: <span id="points">0</span></h1>
+            <h1>Total clicks: <span id="total-points">0</span></h1>
         </header>
     </div>
     <section class="row">
-        <div class="image" id="cat1">
-            <h1>clicks: <span id="points-cat1">0</span></h1>
-            <img src="resources/img/cat_big.jpg" id="cat1" alt="">
-        </div>
-        <div class="image" id="cat2">
-            <h1>clicks: <span id="points-cat2">0</span></h1>
-            <img src="resources/img/cat2.jpg" alt="" id="cat2">
-
-        </div>
-        <div class="image" id="cat3">
-            <h1>clicks: <span id="points-cat3">0</span></h1>
-            <img src="resources/img/cat3.jpg" alt="" id="cat2">
-
-        </div>
-        <div class="image" id="cat4">
-            <h1>clicks: <span id="points-cat4">0</span></h1>
-            <img src="resources/img/cat4.jpg" alt="" id="cat2">
-
-        </div>
-        <div class="image" id="cat5">
-            <h1>clicks: <span id="points-cat5">0</span></h1>
-            <img src="resources/img/cat5.jpg" alt="" id="cat2">
-
-        </div>
-        <div class="text-box">
-            <p>Click Image for Count </p>
+        <ul id="cat-list"></ul>
+        <div id="cat">
+            <div id="info">
+                <h3 id="cat-name"></h3>
+                <h3 id="cat-click"><span id="cat-points"></span></h1>
+            </div>
+            <div id="cat-image"></div>
         </div>
     </section>
     <footer class="row">
