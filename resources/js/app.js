@@ -5,7 +5,9 @@
  * handles click event on image
  */
 (function() {
-
+    /**
+     * model
+     */
     let model = {
         cats: [{
                 'name': 'cat1',
@@ -53,7 +55,9 @@
         }
     }
 
-
+    /**
+     * handles the list view
+     */
     let viewList = {
         init: function() {
             // load the cat names
@@ -89,13 +93,15 @@
             this.catImage.innerHTML = `<img src=${selectedCat.imagePath } id=${selectedCat.name} alt="">`
         }
     }  
-
+    /**
+     * handles the image view
+     */
     let viewImage = {
         init: function() {
             this.catName = document.getElementById('cat-name');
             this.catPoints = document.getElementById('cat-points');
             this.catImage = document.getElementById('cat-image');
-            
+
             const imageDiv = document.getElementById('cat-image');
             imageDiv.addEventListener('click', () => {
                 let selected = octopus.getSelectedCat();
@@ -112,7 +118,7 @@
             this.catImage.innerHTML = `<img src=${selectedCat.imagePath } id=${selectedCat.name} alt="">`
         }
     }
-
+    // application entry point
     octopus.init();
 
 }());
